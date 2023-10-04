@@ -1,4 +1,6 @@
 package wk5;
+import java.awt.Dimension;
+
 import javax.swing.*;
 
 public class Main {
@@ -8,9 +10,17 @@ public class Main {
 		JFrame window = new JFrame("Hello world");
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		// create a label
+		//Create a panel
+		JPanel panel = new JPanel();
+		
+		JButton button = new JButton("Button text");
+		button.setPreferredSize(new Dimension(150,28));
+		
 		JLabel label = new JLabel("I am a Swing label");
-		window.getContentPane().add(label);
+		panel.add(label);
+		panel.add(button);
+		
+		window.getContentPane().add(panel);
 		window.pack();
 		window.setSize(300,250);
 		window.setVisible(true);
