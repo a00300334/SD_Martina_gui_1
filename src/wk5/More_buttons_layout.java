@@ -24,16 +24,16 @@ public class More_buttons_layout {
 				button0.setPreferredSize(new Dimension(300,30));
 				button1.setPreferredSize(new Dimension(300,30));
 				button2.setPreferredSize(new Dimension(300,30));
+				JLabel label = new JLabel("I am a Swing label");
 				
 				panel.add(button0);
 				panel.add(button1);
 				panel.add(button2);
+				panel.add(label);
 				
 				window.getContentPane().add(panel);
 				
-				
 				window.pack();
-//				window.setSize(300,250);
 				window.setVisible(true);
 	}
 
